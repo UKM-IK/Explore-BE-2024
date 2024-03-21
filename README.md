@@ -26,6 +26,8 @@
 - ProsgresSQL
 - Postman
 - Nest JS
+- Typescript
+- Swagger.io
 
 ## Description
 
