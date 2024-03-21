@@ -23,6 +23,9 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 # Tech Stacks
+- ProsgresSQL
+- Postman
+- Nest JS
 
 ## Description
 
