@@ -22,6 +22,8 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+# Tech Stacks
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
@@ -33,6 +35,7 @@ $ npm install
 ```
 
 ## Running the app
+[Nest](https://docs.nestjs.com/) documentation.
 
 ```bash
 # development
@@ -45,18 +48,124 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+
+## Prisma
+NestJS app with Express, [Prisma](https://www.prisma.io/docs) and nestjs-prisma.
 
 ```bash
-# unit tests
-$ npm run test
+# Adjust prisma/schema.prisma and perform a migration:
+$ npx prisma migrate dev
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+# Seed the example database:
+$ npx prisma db seed
 ```
+
+# Exploring Project
+
+**Brief :** <br />
+As a Backend Developer you are required to create API a blog.
+
+Please create API same as those contained in the API address https://gorest.co.in
+
+## Task 1
+
+_Feature to develop :_ **CRUD (Create Read Update Delete) Posts**
+
+Endpoint :
+https://gorest.co.in/public/v2/posts
+
+Example Request for __POST/PUT/PATCH__:
+
+```json
+{
+    "title": "ini judul blog",
+    "body": "ini isi dari postingan blog"
+},
+```
+
+Acceptance Criteria :
+
+- User can view list of posts
+- user can view detail of posts
+- user can create new post
+- user can update post
+- user can delete post
+
+## Task 2
+
+_Feature to develop :_ **CRUD (Create Read Update Delete) Comments**
+
+Endpoint :
+https://gorest.co.in/public/v2/posts/{id_posts}/comments
+
+Example Request for __POST/PUT/PATCH__
+```json
+{
+    "name": "Cahyadi",
+    "email": "cahyadi@utdi.ac.id",
+    "body": "Postingannya keren sekali."
+},
+```
+
+Acceptance Criteria :
+
+- User can view list of comments in post page
+- user can create new comment
+- user can update comment
+- user can delete comment
+
+## Task 3
+
+_Feature to develop :_ **CRUD (Create Read Update Delete) Users**
+
+Endpoint :
+https://gorest.co.in/public/v2/users
+
+Example Request for __POST/PUT/PATCH__
+```json
+{
+    "name": "Madoa",
+    "email": "Madoa@utdi.ac.id",
+    "gender": "male",
+    "status": "active"
+},
+```
+
+Acceptance Criteria :
+
+- User can view list of users
+- user can view detail of users
+- user can create new users
+- user can update users
+- user can delete users
+
+## Task 4
+
+_Feature to develop :_ **CRUD (Create Read Update Delete) Todo Lists**
+
+Endpoint :
+https://gorest.co.in/public/v2/todos
+
+Example Request for __POST/PUT/PATCH__
+```json
+{
+    "title": "Makan Pagi",
+    "due_on": "2024-02-17T00:00:00.000+05:30",
+    "status": "pending"
+},
+```
+
+Acceptance Criteria :
+
+- User can view list of todo
+- user can view detail of todo
+- user can create new todo
+- user can update todo
+- user can delete todo
+
+
+
+
 
 ## Support
 
